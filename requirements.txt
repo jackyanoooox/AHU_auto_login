@@ -1,0 +1,13 @@
+requests
+psutil
+requests
+playwright
+plyer
+pywin32
+pyinstaller
+#win32com
+#pip install -r requirements.txt
+#win32com失败安装pywin32即可
+#playwright install chromium
+#chromium安装路径C:\Users\admin\AppData\Local\ms-playwright\chromium-1067
+#pyinstaller --onefile --noconsole --add-data "C:\Users\admin\AppData\Local\ms-playwright\chromium-1067\chrome-win;chrome-win" --hidden-import=plyer.platforms.win.notification --name=安徽大学校园网自动登录 --version-file .\the_version_info.txt .\auto_login.py
