@@ -23,10 +23,11 @@ password = 123456
 3. 此时就可以双击exe运行了, 脚本会自动登录校园网
 
 
+
 ## 配置开机自动运行
-1. 以管理员身份运行 计划任务自动生成与导入器.exe
-2. (可选)设置主板BIOS AC断电自启
-3. 预防代理打不开浏览器问题
+1. 以管理员身份运行 计划任务自动生成与导入器.exe，配置运行程序路径异常，需要手动进行修改
+2. (可选)设置主板BIOS AC断电自启，dell auto on time-everyday
+3. 预防代理软件未关闭关机，打不开浏览器问题,设置ProxyDisable.exe同任务计划，在登录/启动时关闭代理服务器
 ## 注意事项
 
 1. 在ini中填写的必须是英文符号!!!!!!
@@ -59,10 +60,17 @@ for update.exe
 ```shell
 pyinstaller --onefile --name=update .\update.py
 ```
+
 for 计划任务自动生成与导入.exe
 ```shell
 pyinstaller --onefile --name=计划任务自动生成与导入 .\计划任务自动生成与导入.py
 ```
+
+for ProxyDisable.exe
+```shell
+pyinstaller -F -w ProxyDisable.py
+```
+
 引用来源:https://github.com/Natural-selection1/AHU_auto_login
 
 代码修改自用，如有侵权，请告知删除
